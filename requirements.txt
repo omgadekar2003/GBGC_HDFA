@@ -1,7 +1,8 @@
 # requirements.txt
 streamlit
 pillow
-pymongo[srv]
+pymongo
+#pymongo[srv]
 pandas
 
 
