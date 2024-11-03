@@ -3,7 +3,7 @@ streamlit
 pymongo
 pillow
 pymongo[srv]
-
+pandas
 
 
 #chatgpt, you know that I made a project name Gesture Based Game Control where I want to host that cdoe on streamlit.
