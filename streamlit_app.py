@@ -116,6 +116,7 @@ if page == "Home":
     st.video(video_url, start_time=0)
 
 # Install Manual / Download Code Page
+# Install Manual / Download Code Page
 elif page == "Install Manual/Download Code":
     st.title("Install Manual & Download Code")
     st.write("### Installation Instructions:")
@@ -125,18 +126,12 @@ elif page == "Install Manual/Download Code":
     st.write("4. Install PyAutoGUI: `pip install pyautogui`")
     st.write("5. Install ctypes (comes pre-installed with Python)")
 
-    # Download button for code
-    download_url = "https://github.com/yourusername/yourrepo/raw/main/GBGC.zip"  # Replace with the actual raw GitHub URL of your zip file
-    st.download_button(
-        label="Download Code",
-        data=None,  # We set data to None since we're linking to an external file
-        format="zip",
-        file_name="GBGC.zip",  # The name for the downloaded file
-        mime="application/zip",
-        help="Click here to download the compressed code file.",
-        key="download_code_button",
-        on_click=lambda: st.success("Downloading...")  # Optional: Show a message when the button is clicked
-    )
+    # Provide a link to download the code
+    download_url = "https://github.com/yourusername/yourrepo/raw/main/GBGC.zip"  # Replace with the actual URL
+
+    # Display download link as a clickable text
+    st.markdown(f"[Download Code](https://github.com/yourusername/yourrepo/raw/main/GBGC.zip)", unsafe_allow_html=True)
+    st.info("Click the link above to download the compressed code file.")
 
 # Feedback Page
 elif page == "Feedback":
@@ -170,7 +165,7 @@ elif page == "Feedback":
 
 
 # About Us Page
-elif page == "About Us":
+ elif page == "About Us":
     st.title("About Us")
     st.write("## Developers")
     col1, col2 = st.columns(2)
