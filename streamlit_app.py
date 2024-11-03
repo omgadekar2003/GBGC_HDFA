@@ -190,7 +190,7 @@ elif page == "About Us":
     col1, col2 = st.columns(2)
     with col1:
         st.write("### OM GADEKAR (B.Tech CSE)")
-        st.image("1000017801_111zon.jpg.jpg")  # Ensure this path is correct
+        st.image("1000017801_11zon.jpg.jpg")  # Ensure this path is correct
     with col2:
         st.write("### ANIKET CHOPDE (B.Tech CSE)")
         st.image("IMG_20241103_143437.jpg")  # Ensure this path is correct
