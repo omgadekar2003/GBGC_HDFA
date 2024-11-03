@@ -124,7 +124,7 @@ elif page == "Install Manual/Download Code":
     st.write("3. Install MediaPipe: `pip install mediapipe`")
     st.write("4. Install PyAutoGUI: `pip install pyautogui`")
     st.write("5. Install ctypes (comes pre-installed with Python)")
-    
+
     # Download button for code
     download_url = "https://github.com/yourusername/yourrepo/raw/main/GBGC.zip"  # Replace with the actual raw GitHub URL of your zip file
     st.download_button(
@@ -137,21 +137,6 @@ elif page == "Install Manual/Download Code":
         key="download_code_button",
         on_click=lambda: st.success("Downloading...")  # Optional: Show a message when the button is clicked
     )
-
-#---------------------------------------------
-    # # Download button for code
-    # download_file_path = "path/to/your_code.zip"  # Replace with the actual path to your compressed code file
-    # if os.path.exists(download_file_path):  # Check if the file exists
-    #     with open(download_file_path, "rb") as f:
-    #         st.download_button(
-    #             label="Download Code",
-    #             data=f,
-    #             file_name="GBGC.zip",  # The name for the downloaded file
-    #             mime="application/zip"
-    #         )
-    # else:
-    #     st.error("Code download file not found. Please check the path.")
-##----------
 
 # Feedback Page
 elif page == "Feedback":
@@ -195,7 +180,7 @@ elif page == "About Us":
         st.write("### OM GADEKAR (B.Tech CSE)")
         st.markdown(
             '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-            f'<img src="1000017801_111zon.jpg" style="width: 100%; height: auto;">'
+            f'<img src="1000017801_11zon.jpg" style="width: 100%; height: auto;">'
             '</div>',
             unsafe_allow_html=True
         )
@@ -221,6 +206,7 @@ elif page == "About Us":
         '</div>',
         unsafe_allow_html=True
     )
+
 
 
 
