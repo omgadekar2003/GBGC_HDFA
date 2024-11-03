@@ -1,1 +1,68 @@
 # requirements.txt
+streamlit
+pymongo
+pillow
+
+#chatgpt, you know that I made a project name Gesture Based Game Control where I want to host that cdoe on streamlit.
+
+#so i made idea of making streamlit app so it contains multi page as in side bar.
+#it contains 4 :
+#1.Home 
+#2. Install Mamual/Download Code
+#3. Feedback
+#4. About Us
+
+#1. Home :
+
+#at title : Gesture Based Game Control
+#one slogan to the project
+#after that Intro give 1 paragraph information about project and then video that i'm going to provide from github which directly start(automatically start).
+#also addsome thing from your side on home page.
+
+#2.  Install Manual/Download Code;
+
+#here wewant python then opencv,mediappe,pyautogui,cytpes so there installation maual in the form of streamlit app.
+#after this i'm going to provide you a path of github file can be download as user click on "Download" Button. so add one download button at that that after manual.  
+
+#give me with design ,logo,icons add in it from your side and make it attractive 
+
+#   3.  Feedback Page:
+
+#so on feedback page user is giving his feedback for our Gesture Based Game Control code he used in the her system and giving us feedback.
+#feddback contain form which contain :
+#i. Email.(text_input)
+#ii. Rate Us 1 to 5 (slider)
+#iii. like it or Not check box for both
+#iv. Suggestions(max 60 words)
+#v. submit button
+
+#after click on submit button add all that on a MongoDB atlas as each user's feedback we want to store it on MongoDB.
+
+#and all that feedback also see by all users who come to give feeback on our app so that those feddbacks also should be show on streamlit app when we re-run.
+
+#4. About Us:
+
+#about us contain :
+#Developers :
+
+#I. OM GADEKAR (B.Tech CSE)
+#image("path")
+#II. ANIKET CHOPDE (B.Tech CSE)
+#image("path")
+#developers  name are in 1 row and below there name there photos
+
+#Guide:
+
+#Prof. P. A. Bhalekar
+
+#College:
+
+#DIEMS
+#logo-image("path")
+
+
+ #  I give you content for all 4 pages now make multi Page streamlit APP for me. On each Page there is Title: "GESTURE BASED GAME CONTROL"
+#give me all code also tell me  how to connect feedback page's Data with MonogDB Atlas.
+#also add some design logo,icon from your side.
+
+#I know that chatgpt you going this work perfectly so do it  
