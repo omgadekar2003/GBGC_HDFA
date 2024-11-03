@@ -117,7 +117,7 @@ feedback_collection = db["feedback"]  # Collection name
 # Set page configuration and sidebar
 st.set_page_config(page_title="Gesture Based Game Control", page_icon="🎮", layout="wide")
 st.sidebar.title("Gesture Based Game Control")
-st.sidebar.image("logo.png", use_column_width=True)  # Add a logo at the top of the sidebar
+st.sidebar.image("IMG-20241020-WA0001.jpg", use_column_width=True)  # Add a logo at the top of the sidebar
 
 # Use radio buttons for page selection
 page = st.sidebar.radio(
