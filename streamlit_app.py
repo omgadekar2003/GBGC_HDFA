@@ -1,5 +1,6 @@
 
 #----------------------------------------------------------------------------
+#----------------------------------------------------------------------------
 import streamlit as st
 from pymongo import MongoClient
 import pandas as pd
@@ -27,7 +28,6 @@ if page == "Home":
     video_url = "https://youtu.be/QMc6YheYKl0?si=iRq3qXVLEVgQTnPe"
     st.video(video_url, start_time=0)
 
-# Install Manual / Download Code Page
 # Install Manual / Download Code Page
 elif page == "Install Manual/Download Code":
     st.title("Install Manual & Download Code")
@@ -75,25 +75,21 @@ elif page == "Feedback":
     feedback_df = pd.DataFrame(feedback_list)
     st.write(feedback_df)
 
-
 # About Us Page
- elif page == "About Us":
-     st.title("About Us")
-     st.write("## Developers")
-     col1, col2 = st.columns(2)
-     with col1:
-         st.write("### OM GADEKAR")
-         st.image("1000017801_11zon.jpg")
-     with col2:
-         st.write("### ANIKET CHOPDE")
-         st.image("IMG_20241103_143437.jpg")
+elif page == "About Us":
+    st.title("About Us")
+    st.write("## Developers")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("### OM GADEKAR")
+        st.image("1000017801_11zon.jpg")
+    with col2:
+        st.write("### ANIKET CHOPDE")
+        st.image("IMG_20241103_143437.jpg")
 
-     st.write("## Guide")
-     st.write("Prof. P. A. Bhalekar")
+    st.write("## Guide")
+    st.write("Prof. P. A. Bhalekar")
 
-     st.write("## College")
-     st.write("DIEMS")
-     st.image("deogiri.png")
-
-
-
+    st.write("## College")
+    st.write("DIEMS")
+    st.image("deogiri.png")
