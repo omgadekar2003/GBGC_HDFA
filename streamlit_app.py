@@ -168,46 +168,64 @@ elif page == "Feedback":
     feedback_df = pd.DataFrame(feedback_list)
     st.write(feedback_df)
 
+# # About Us Page
+# elif page == "About Us":
+#     st.title("About Us")
+#     st.write("## Developers")
+    
+#     col1, col2 = st.columns(2)
+
+#     # First Developer
+#     with col1:
+#         st.write("### OM GADEKAR (B.Tech CSE)")
+#         st.markdown(
+#             '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
+#             f'<img src="1000017801_11zon.jpg" style="width: 150px; height: 150px;">'
+#             '</div>',
+#             unsafe_allow_html=True
+#         )
+
+#     # Second Developer
+#     with col2:
+#         st.write("### ANIKET CHOPDE (B.Tech CSE)")
+#         st.markdown(
+#             '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
+#             f'<img src="IMG_20241103_143437.jpg" style="width: 150px; height: 150px;">'
+#             '</div>',
+#             unsafe_allow_html=True
+#         )
+
+#     st.write("## Guide")
+#     st.write("Prof. P. A. Bhalekar")
+
+#     st.write("## College")
+#     st.write("DIEMS")
+#     st.markdown(
+#         '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
+#         f'<img src="deogiri.png" style="width: 150px; height: 150px;">'
+#         '</div>',
+#         unsafe_allow_html=True
+#     )
+
+
 # About Us Page
 elif page == "About Us":
     st.title("About Us")
     st.write("## Developers")
-    
     col1, col2 = st.columns(2)
-
-    # First Developer
     with col1:
         st.write("### OM GADEKAR (B.Tech CSE)")
-        st.markdown(
-            '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-            f'<img src="1000017801_11zon.jpg" style="width: 150px; height: 150px;">'
-            '</div>',
-            unsafe_allow_html=True
-        )
-
-    # Second Developer
+        st.image("1000017801_11zon.jpg")
     with col2:
         st.write("### ANIKET CHOPDE (B.Tech CSE)")
-        st.markdown(
-            '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-            f'<img src="IMG_20241103_143437.jpg" style="width: 150px; height: 150px;">'
-            '</div>',
-            unsafe_allow_html=True
-        )
+        st.image("IMG_20241103_143437.jpg")
 
     st.write("## Guide")
     st.write("Prof. P. A. Bhalekar")
 
     st.write("## College")
     st.write("DIEMS")
-    st.markdown(
-        '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-        f'<img src="deogiri.png" style="width: 150px; height: 150px;">'
-        '</div>',
-        unsafe_allow_html=True
-    )
-
-
+    st.image("deogiri.png")
 
 
 
