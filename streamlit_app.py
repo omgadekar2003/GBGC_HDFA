@@ -180,7 +180,7 @@ elif page == "About Us":
         st.write("### OM GADEKAR (B.Tech CSE)")
         st.markdown(
             '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-            f'<img src="1000017801_11zon.jpg" style="width: 100%; height: auto;">'
+            f'<img src="1000017801_11zon.jpg" style="width: 150px; height: 150px;">'
             '</div>',
             unsafe_allow_html=True
         )
@@ -190,7 +190,7 @@ elif page == "About Us":
         st.write("### ANIKET CHOPDE (B.Tech CSE)")
         st.markdown(
             '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-            f'<img src="IMG_20241103_143437.jpg" style="width: 100%; height: auto;">'
+            f'<img src="IMG_20241103_143437.jpg" style="width: 150px; height: 150px;">'
             '</div>',
             unsafe_allow_html=True
         )
@@ -202,10 +202,11 @@ elif page == "About Us":
     st.write("DIEMS")
     st.markdown(
         '<div style="border-radius: 50%; overflow: hidden; width: 150px; height: 150px;">'
-        f'<img src="IMG_20241103_143437.jpg" style="width: 100%; height: auto;">'
+        f'<img src="deogiri.png" style="width: 150px; height: 150px;">'
         '</div>',
         unsafe_allow_html=True
     )
+
 
 
 
