@@ -38,12 +38,31 @@ elif page == "Install Manual/Download Code":
     st.write("4. Install PyAutoGUI: `pip install pyautogui`")
     st.write("5. Install ctypes (comes pre-installed with Python)")
 
-    # Provide a link to download the code
-    download_url = "https://github.com/yourusername/yourrepo/raw/main/GBGC.zip"  # Replace with the actual URL
+    # Load the zip file in binary mode
+    with open("GBGC.zip", "rb") as file:
+        data = file.read()
 
-    # Display download link as a clickable text
-    st.markdown(f"[Download Code](https://github.com/yourusername/yourrepo/raw/main/GBGC.zip)", unsafe_allow_html=True)
-    st.info("Click the link above to download the compressed code file.")
+    # Create a download button for the zip file
+    st.download_button(
+        label="Download Code",
+        data=data,
+        file_name="GBGC.zip",
+        mime="application/zip")
+
+    # Provide a link to download the code
+    # download_url = "https://github.com/yourusername/yourrepo/raw/main/GBGC.zip"  # Replace with the actual URL
+
+    # # Display download link as a clickable text
+    # st.markdown(f"[Download Code](https://github.com/yourusername/yourrepo/raw/main/GBGC.zip)", unsafe_allow_html=True)
+    # st.info("Click the link above to download the compressed code file.")
+    #----
+    # st.download_button(
+    # label="Download Code",
+    # data = data,
+    # file_name = "Gesture_Based_Game_Control",
+    # mime = "text"
+    # )
+    #----
 
 # Feedback Page
 elif page == "Feedback":
