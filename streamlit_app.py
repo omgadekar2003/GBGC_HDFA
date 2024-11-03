@@ -185,6 +185,6 @@ elif page == "About Us":
 
     st.write("## College")
     st.write("DIEMS")
-    st.image("path/to/college_logo.jpg")  # Ensure this path is correct
+    st.image("IMG_20241103_143437.jpg")  # Ensure this path is correct
 
 
