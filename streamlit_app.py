@@ -178,7 +178,7 @@ elif page == "About Us":
         st.image("1000017801_111zon.jpg.jpg")  # Ensure this path is correct
     with col2:
         st.write("### ANIKET CHOPDE (B.Tech CSE)")
-        st.image("path/to/aniket_image.jpg")  # Ensure this path is correct
+        st.image("IMG_20241103_143437.jpg")  # Ensure this path is correct
 
     st.write("## Guide")
     st.write("Prof. P. A. Bhalekar")
