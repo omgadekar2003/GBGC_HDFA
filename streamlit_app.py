@@ -270,18 +270,59 @@ elif page == "About Us":
 
     col1, col2 = st.columns(2)
 
-    # Developer 1
-    with col1:
-        st.write("### Om Gadekar")
-        om_image = Image.open("1000017801_11zon.jpg").resize((150, 150))  # Adjust image size
-        st.image(om_image, use_column_width=False, width=150, caption="Om Gadekar", output_format="PNG", clamp=True)
+    # # Developer 1
+    # with col1:
+    #     st.write("### Om Gadekar")
+    #     om_image = Image.open("1000017801_11zon.jpg").resize((150, 150))  # Adjust image size
+    #     st.image(om_image, use_column_width=False, width=150, caption="Om Gadekar", output_format="PNG", clamp=True)
         
 
-    # Developer 2
-    with col2:
-        st.write("### Aniket Chopde")
-        aniket_image = Image.open("IMG_20241103_143437.jpg").resize((150, 150))  # Adjust image size
-        st.image(aniket_image, use_column_width=False, width=150, caption="Aniket Chopde", output_format="PNG", clamp=True)
+    # # Developer 2
+    # with col2:
+    #     st.write("### Aniket Chopde")
+    #     aniket_image = Image.open("IMG_20241103_143437.jpg").resize((150, 150))  # Adjust image size
+    #     st.image(aniket_image, use_column_width=False, width=150, caption="Aniket Chopde", output_format="PNG", clamp=True)
+    # Function to display social media links with icons
+     def display_social_links(linkedin_url, instagram_url):
+     linkedin_icon = "https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"
+     instagram_icon = "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+    
+      # Display LinkedIn and Instagram links with icons
+     st.markdown(f"""
+     <style>
+     .icon {{
+         height: 20px;
+         width: 20px;
+     }}
+     </style>
+     <a href="{linkedin_url}" target="_blank">
+         <img src="{linkedin_icon}" alt="LinkedIn" class="icon">
+     </a> &nbsp; 
+    <a href="{instagram_url}" target="_blank">
+         <img src="{instagram_icon}" alt="Instagram" class="icon">
+     </a>
+     """, unsafe_allow_html=True)
+
+# Column layout for developer profiles
+col1, col2 = st.columns(2)
+ 
+ # Developer 1
+with col1:
+     st.write("### Om Gadekar")
+     om_image = Image.open("1000017801_11zon.jpg").resize((150, 150))  # Adjust image size
+     st.image(om_image, use_column_width=False, width=150, caption="Om Gadekar", output_format="PNG", clamp=True)
+     # Social links for Om Gadekar
+     display_social_links("https://www.linkedin.com/in/omgadekar", "https://www.instagram.com/_o_g_/")
+
+ # Developer 2
+with col2:
+     st.write("### Aniket Chopde")
+     aniket_image = Image.open("IMG_20241103_143437.jpg").resize((150, 150))  # Adjust image size
+     st.image(aniket_image, use_column_width=False, width=150, caption="Aniket Chopde", output_format="PNG", clamp=True)
+     # Social links for Aniket Chopde
+     display_social_links("https://www.linkedin.com/in/aniketchopde", "https://www.instagram.com/aniket_chopde")
+
+st.write("---")
 
     st.write("---")
 
