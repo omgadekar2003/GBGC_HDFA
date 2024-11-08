@@ -270,7 +270,7 @@ elif page == "About Us":
     # Developer 2
     with col2:
         st.write("### Aniket Chopde")
-        aniket_image = Image.open("IMG_20241103_143437.jpg").resize((150, 150))  # Adjust image size
+        aniket_image = Image.open("IMG-20241107-WA0001.jpg").resize((150, 150))  # Adjust image size
         st.image(aniket_image, use_column_width=False, width=150, caption="Aniket Chopde", output_format="PNG", clamp=True)
 
     st.write("---")
