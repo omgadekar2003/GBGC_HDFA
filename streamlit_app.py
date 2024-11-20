@@ -45,48 +45,59 @@ if page == "Home":
 elif page == "Install Manual & Download Code":
     st.title("📥 Install Manual & Download Code")
     st.markdown("### Follow these instructions to set up Gesture Based Game Control:")
-
-    # Instructions
     instructions = [
         "1. Install Python",
         "2. Install OpenCV: `pip install opencv-python`",
         "3. Install MediaPipe: `pip install mediapipe`",
-        "4. Install pynput For MAC Users: `pip install pynput`",
+        "4. Install Pynput for MAC OR LINUX only: `pip install pynput`",
         "5. Install ctypes (pre-installed with Python)",
         "6. See Game Playing Video to understand Gestures"
     ]
     for step in instructions:
         st.write(step)
 
-    st.write("---")
-
-    # Download section for Windows
-    st.markdown("### 📥 Download Code for Windows")
+    # Load and provide the zip files for download
     with open("GBGC.zip", "rb") as windows_file:
         windows_data = windows_file.read()
-
-    st.download_button(
-        label="📥 Download Windows Code 📥",
-        data=windows_data,
-        file_name="GBGC.zip",
-        mime="application/zip",
-        help="Download the source code for Windows in a zip file."
-    )
-
-    # Download section for Mac
-    st.markdown("### 📥 Download Code for Mac")
+    
     with open("MAC code.zip", "rb") as mac_file:
         mac_data = mac_file.read()
+    
+    with open("Linux Code.zip", "rb") as linux_file:
+        linux_data = linux_file.read()
 
-    st.download_button(
-        label="📥 Download Mac Code 📥",
-        data=mac_data,
-        file_name="MAC code.zip",
-        mime="application/zip",
-        help="Download the source code for Mac in a zip file."
-    )
-
+    # Add download buttons for each platform
+    st.markdown("#### Choose your platform to download the code:")
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.download_button(
+            label="📥 Download Windows Code",
+            data=windows_data,
+            file_name="GBGC.zip",
+            mime="application/zip",
+            help="Download the source code for Windows."
+        )
+    
+    with col2:
+        st.download_button(
+            label="📥 Download macOS Code",
+            data=mac_data,
+            file_name="MAC code.zip",
+            mime="application/zip",
+            help="Download the source code for macOS."
+        )
+    
+    with col3:
+        st.download_button(
+            label="📥 Download Linux Code",
+            data=linux_data,
+            file_name="Linux Code.zip",
+            mime="application/zip",
+            help="Download the source code for Linux."
+        )
     st.write("---")
+
 
 
 # Feedback Page
