@@ -51,7 +51,7 @@ elif page == "Install Manual & Download Code":
         "1. Install Python",
         "2. Install OpenCV: `pip install opencv-python`",
         "3. Install MediaPipe: `pip install mediapipe`",
-        "4. Install PyAutoGUI: `pip install pyautogui`",
+        "4. Install pynput For MAC Users: `pip install pynput`",
         "5. Install ctypes (pre-installed with Python)",
         "6. See Game Playing Video to understand Gestures"
     ]
