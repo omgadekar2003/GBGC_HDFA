@@ -16,7 +16,7 @@ feedback_collection = db["feedback"]  # Collection name
 # Set page configuration and sidebar
 st.set_page_config(page_title="Gesture Based Game Control", page_icon="🎮", layout="wide")
 st.sidebar.title("Gesture Based Game Control")
-st.sidebar.image("IMG-20241020-WA0001.jpg", use_column_width=True)  # Add a logo at the top of the sidebar
+st.sidebar.image("IMG-20241020-WA0001.jpg", use_container_width=True)  # Add a logo at the top of the sidebar
 
 # Use radio buttons for page selection
 page = st.sidebar.radio(
@@ -143,14 +143,14 @@ elif page == "About Us":
     with col1:
         st.write("### Om Gadekar")
         om_image = Image.open("1000017801_11zon.jpg").resize((150, 150))  # Adjust image size
-        st.image(om_image, use_column_width=False, width=150, caption="Om Gadekar", output_format="PNG", clamp=True)
+        st.image(om_image, use_container_width=False, width=150, caption="Om Gadekar", output_format="PNG", clamp=True)
         
 
     # Developer 2
     with col2:
         st.write("### Aniket Chopde")
         aniket_image = Image.open("IMG-20241107-WA0001.jpg").resize((150, 150))  # Adjust image size
-        st.image(aniket_image, use_column_width=False, width=150, caption="Aniket Chopde", output_format="PNG", clamp=True)
+        st.image(aniket_image, use_container_width=False, width=150, caption="Aniket Chopde", output_format="PNG", clamp=True)
 
     st.write("---")
 
@@ -161,7 +161,7 @@ elif page == "About Us":
     st.write("## College")
     st.write("🏫 Deogiri Institute of Engineering and Management Studies (DIEMS)")
     college_image = Image.open("deogiri.png").resize((150, 150))
-    st.image(college_image, use_column_width=False, width=150, output_format="PNG", clamp=True)
+    st.image(college_image, use_container_width=False, width=150, output_format="PNG", clamp=True)
 
 # Footer
 st.sidebar.write("---")
